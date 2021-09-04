@@ -262,6 +262,10 @@ hr {
     .earth-vec-img {
         display: none;
     }
+    
+    .earth-vec-img-forMob {
+        display: block;
+    }
 
     .second_big-space {
         align-items: center;
