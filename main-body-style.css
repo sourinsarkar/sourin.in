@@ -190,6 +190,10 @@ div{
     margin-top: 1rem;
 }
 
+.earth-vec-img-forMob {
+    display: none;
+}
+
 hr {
     border: none;
     height: 0.5px;
@@ -257,6 +261,10 @@ hr {
 
     .earth-vec-img {
         display: none;
+    }
+    
+    .earth-vec-img-forMob {
+        display: block;
     }
 
     .second_big-space {
