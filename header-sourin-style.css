@@ -1,0 +1,146 @@
+:root {
+    --clr-primary: rgba(59, 66, 72, 1);
+    --clr-ele-blue: rgba(0, 34, 238, 1); 
+    --ff-primary: poppins, sans-serif;
+    --ff-sec: acumin-pro, sans-serif;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    min-height: 0;
+    min-width: 0;
+}
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+div {
+    display: block;
+}
+body, html {
+    height: auto;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-y: overlay;
+}
+
+body {
+    font-family:var(--ff-primary);
+    -webkit-font-smoothing: antialiased;
+}
+
+.header {
+    width: 100%;
+}
+
+.header-things {
+    display: flex;
+    align-items: center;
+    height: 64px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.logo {
+    padding: 0 36px 0 20px;
+}
+
+.logo-small {
+    display: none;
+}
+
+.for_nav_btn {
+    margin-left: 5px;
+    display: none;
+}
+
+.nav-btn {
+    border: none;
+    padding: 5px;
+    position: relative;
+    background-color: transparent;
+}
+
+.for_nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.nav-prime ul {
+    list-style-type: none;
+    display: flex;
+}
+
+.nav-prime a{
+    text-decoration: none;
+    color:rgba(59, 66, 72, 0.9);
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 0.6rem 1rem;
+}
+
+.nav-prime a:hover {
+    text-decoration: none;
+    background-color: rgba(59, 66, 72, 0.08);
+    border-radius: 12px;
+    transition-duration: 0.2s;
+}
+
+.nav_services ul {
+    list-style-type: none;
+}
+
+.appWrapper {
+    outline: none;
+    width: 100vw;
+    min-height: 100vh;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 14px;
+}
+
+@media screen and (min-width: 1280px) {
+    .appWrapper {
+        padding: 0 80px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .appWrapper {
+        padding: 0 40px;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .appWrapper {
+        padding: 0 60px;
+    }
+}
+
+/* -----------------------------------------ALL MEDIA QUERIES-------------------------------------------- */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    .header-things {
+        height: 50px;
+    }
+
+    .nav-prime {
+        display: none;
+    }
+
+    .logo {
+        display:none;
+    }
+
+    .logo-small {
+        display: inline-block;
+        padding: 0 10px;
+    }
+    
+    .for_nav_btn {
+        display: inline-block;
+    }
+}

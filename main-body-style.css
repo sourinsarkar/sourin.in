@@ -1,0 +1,273 @@
+:root {
+    --clr-primary: rgba(59, 66, 72, 1);
+    --clr-ele-blue: rgba(0, 34, 238, 1); 
+    --ff-primary: poppins, sans-serif;
+    --ff-sec: acumin-pro, sans-serif;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    min-height: 0;
+    min-width: 0;
+}
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body, html {
+    height: auto;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-y: overlay;
+}
+
+body {
+    font-family:var(--ff-primary);
+    -webkit-font-smoothing: antialiased;
+}
+
+div{
+    display: block;
+}
+
+.appWrapper {
+    outline: none;
+    width: 100vw;
+    min-height: 100vh;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 14px;
+}
+
+@media screen and (min-width: 1280px) {
+    .appWrapper {
+        padding: 0 80px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .appWrapper {
+        padding: 0 40px;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .appWrapper {
+        padding: 0 80px;
+    }
+}
+
+.top-big-space {
+    height: 30rem;
+    align-items: center;
+}
+
+.main-txt {
+    font-weight: 500;
+    font-style: normal;
+    font-size: 7rem;
+    padding-top: 6rem;
+    position: relative;
+}
+
+.forSubCnt {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.forSubCnt_part1 {
+    flex-basis: 45rem;
+}
+
+.sub-txt {
+    font-weight: 500;
+    font-style: normal;
+    font-size: 2.3rem;
+    position: relative;
+    line-height: 45px;
+    color:rgba(59, 66, 72, 0.8);
+}
+
+.second_big-space {
+    align-items: center;
+    height: 27rem;
+}
+
+.second_Contr {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: minmax(300px, auto);
+    grid-column-gap: 30px;
+    padding-top: 50px;
+}
+
+.second_Contr_parts {
+    width: 100%;
+}
+/* FOR THE FIRST BOX */
+.second_Contr_part1, .second_Contr_part1:hover {
+    background-color: var(--clr-ele-blue);
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.txt_Cnt {
+    margin: 2rem 2.5rem;
+}
+
+.txt_Cnt .txt_Cnt_head {
+    width: 100%;
+}
+
+.txt_Cnt .txt_Cnt_head .txt_Cnt_h {
+    font-weight: 500;
+    font-size: 2.8rem;
+    line-height: 60px;
+    color: rgba(255,255,255,0.95);
+}
+
+.txt_Cnt .txt_Cnt_sub {
+    margin-top: 10px;
+}
+
+.txt_Cnt .txt_Cnt_sub .txt_Cnt_s {
+    font-family: acumin-pro, sans-serif;
+    font-style: normal;
+    font-size: 1.6rem;
+    line-height: 28px;  
+    color: rgba(255,255,255,0.95);
+}
+/* FOR THE SECOND BOX */
+.second_Contr_part2 {
+    border: 1px solid rgba(59, 66, 72, 0.8);;
+    border-radius: 12px;
+    display: flex;
+}
+
+.second_Contr .second_Contr_part2 .box_Cnt  {
+    width:50%;
+}
+
+.txt_Cnt .txt_Cnt1_line1, .txt_Cnt .txt_Cnt1_line3 {
+    font-family: var(--ff-primary);
+    font-weight: 600;
+    font-size: 1.5rem;
+    position: relative;
+}
+
+.txt_Cnt .txt_Cnt1_line2 {
+    font-family: var(--ff-primary);
+    font-weight: 700;
+    font-size: 5rem;
+    line-height: 90px;
+    color: rgba(114, 191, 68, 1);
+    position: relative;
+}
+
+.para-btn1 {
+    font-family: var(--ff-primary);
+    font-weight: 450;
+    font-size: 1rem;
+    text-align: center;
+    color: rgba(114, 191, 68, 1);
+    background-color: transparent;
+    border: 2px solid rgba(114, 191, 68, 1);
+    border-radius: 50px;
+    margin-top: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.para-btn1:hover {
+    background-color: rgba(114, 191, 68, 0.2);
+    border: 2px solid rgba(114, 191, 68, 0.02);
+    transition-duration: 0.3s;
+}
+
+.earth-vec-img {
+    margin-top: 1rem;
+}
+
+hr {
+    border: none;
+    height: 0.5px;
+    background-color: rgba(59, 66, 72, 1);
+    width: 100%;
+    display: block;
+}
+/* -----------------------------------------ALL MEDIA QUERIES-------------------------------------------- */
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    .top-big-space{
+        height: 22rem;
+    }
+
+    .main-txt {
+        font-size: 3rem;
+        padding-top: 3.5rem;
+        line-height: 60px;
+    }
+
+    .sub-txt {
+        font-size: 1.5rem;
+        line-height: 26px;
+        padding-top: 2rem;
+    }
+
+    .second_Contr {
+        display: flex;
+        flex-wrap:wrap;
+    }
+
+    .txt_Cnt {
+        margin: 1rem 1.5rem;
+    }
+/* 
+    .second_big-space {
+        background-color: pink;
+    } */
+
+    .second_Contr_parts {
+        /* min-height: 15rem; */
+        flex-wrap: wrap;
+        margin: 15px auto;
+
+    }
+
+    .txt_Cnt .txt_Cnt_head .txt_Cnt_h {
+        font-size: 2rem;
+        line-height: 40px;
+    }
+
+    .txt_Cnt .txt_Cnt_sub .txt_Cnt_s {
+        font-size: 1rem;
+        line-height: 22px;
+    }
+
+    .txt_Cnt .txt_Cnt1_line1, .txt_Cnt .txt_Cnt1_line3 {
+        font-size: 1rem;
+    }
+
+    .txt_Cnt .txt_Cnt1_line2 {
+        font-size: 3rem;
+        line-height: 60px;
+    }
+
+    .earth-vec-img {
+        display: none;
+    }
+
+    .second_big-space {
+        align-items: center;
+        height: 34rem;
+    }
+
+    .para-btn1 {
+        font-size: 0.7rem;
+        margin-top: 10px;
+        padding: 5px 8px;
+        background-color: transparent;
+    }
+}
