@@ -193,6 +193,14 @@
         display: none;
     }
 
+    .nav-btn {
+        display: block;
+    }
+
+    .for_nav_btn:hover .dropdownSection {
+        display: block;
+    }
+
     .logo {
         display:none;
     }
