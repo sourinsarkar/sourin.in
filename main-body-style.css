@@ -100,7 +100,7 @@ div{
 }
 /* FOR THE FIRST BOX */
 .second_Contr_part1, .second_Contr_part1:hover {
-    background-color: var(--clr-ele-indOrange);
+    background-color: var(--clr-ele-blue);
     border-radius: 12px;
     cursor: pointer;
 }
