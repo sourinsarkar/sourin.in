@@ -1218,8 +1218,9 @@ hr {
         grid-auto-rows: minmax(200px, auto);
         grid-column-gap: 30px;
         padding-top: 30px;
+        padding-bottom: 30px;
     }
-
+    
     .txt_Cnt {
         margin: 1rem 1.5rem;
     }
@@ -1228,41 +1229,41 @@ hr {
         /* min-height: 15rem; */
         flex-wrap: wrap;
         margin: 15px auto;
-
+        
     }
-
+    
     .txt_Cnt .txt_Cnt_head .txt_Cnt_h {
         font-size: 2rem;
         line-height: 40px;
     }
-
+    
     .txt_Cnt .txt_Cnt_sub .txt_Cnt_s {
         font-size: 1rem;
         line-height: 22px;
     }
-
+    
     .txt_Cnt .txt_Cnt1_line1, .txt_Cnt .txt_Cnt1_line3 {
         font-size: 1.2rem;
     }
-
+    
     .txt_Cnt .txt_Cnt1_line3 {
         line-height: 22px;
     }
-
+    
     .txt_Cnt .txt_Cnt1_line2 {
         font-size: 4rem;
         line-height: 60px;
     }
-
+    
     .earth-vec-img {
         display: none;
     }
-
+    
     .earth-vec-img-forMob {
         display: block;
         margin-top: 40px; 
     }
-
+    
     .para-btn1 {
         font-size: 0.7rem;
         margin-top: 10px;
@@ -1278,68 +1279,69 @@ hr {
         padding-top: 3.5rem;
         line-height: 60px;
     }
-
+    
     .forSubCnt_part1 {
         flex-basis: 20rem;
     }
-
+    
     .sub-txt {
         font-size: 1.5rem;
         line-height: 26px;
         padding-top: 2rem;
     }
-
+    
     .second_Contr {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-auto-rows: minmax(200px, auto);
         grid-column-gap: 30px;
         padding-top: 30px;
+        padding-bottom: 30px;
     }
-
+    
     .txt_Cnt {
         margin: 1rem 1.5rem;
     }
-
+    
     .second_Contr_parts {
         /* min-height: 15rem; */
         flex-wrap: wrap;
         margin: 15px auto;
-
+        
     }
-
+    
     .txt_Cnt .txt_Cnt_head .txt_Cnt_h {
         font-size: 2rem;
         line-height: 40px;
     }
-
+    
     .txt_Cnt .txt_Cnt_sub .txt_Cnt_s {
         font-size: 1rem;
         line-height: 22px;
     }
-
+    
     .txt_Cnt .txt_Cnt1_line1, .txt_Cnt .txt_Cnt1_line3 {
         font-size: 1.2rem;
     }
-
+    
     .txt_Cnt .txt_Cnt1_line3 {
         line-height: 22px;
     }
-
+    
     .txt_Cnt .txt_Cnt1_line2 {
         font-size: 4rem;
         line-height: 60px;
     }
-
+    
     .earth-vec-img {
         display: none;
     }
-
+    
     .earth-vec-img-forMob {
         display: block;
         margin-top: 40px; 
     }
-
+    
     .para-btn1 {
         font-size: 0.7rem;
         margin-top: 10px;
@@ -1355,11 +1357,11 @@ hr {
         padding-top: 3.5rem;
         line-height: 60px;
     }
-
+    
     .forSubCnt_part1 {
         flex-basis: 20rem;
     }
-
+    
     .sub-txt {
         font-size: 1.5rem;
         line-height: 26px;
@@ -1372,8 +1374,9 @@ hr {
         grid-auto-rows: minmax(200px, auto);
         grid-column-gap: 30px;
         padding-top: 30px;
+        padding-bottom: 30px;
     }
-
+    
     .txt_Cnt {
         margin: 1rem 1.5rem;
     }
