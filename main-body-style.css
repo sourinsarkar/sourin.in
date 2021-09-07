@@ -1192,6 +1192,77 @@ hr {
     }
 }
 
+@media only screen and (min-width: 481px) and (max-width: 719px) {
+    .main-txt {
+        font-size: 3rem;
+        padding-top: 3.5rem;
+        line-height: 60px;
+    }
+
+    .forSubCnt_part1 {
+        flex-basis: 20rem;
+    }
+
+    .sub-txt {
+        font-size: 1.5rem;
+        line-height: 26px;
+        padding-top: 2rem;
+    }
+
+    .second_Contr {
+        display: flex;
+        flex-wrap:wrap;
+        padding-top: 20px;
+        padding-bottom: 30px;
+    }
+
+    .txt_Cnt {
+        margin: 1rem 1.5rem;
+    }
+
+    .second_Contr_parts {
+        /* min-height: 15rem; */
+        flex-wrap: wrap;
+        margin: 15px auto;
+    }
+
+    .txt_Cnt .txt_Cnt_head .txt_Cnt_h {
+        font-size: 2rem;
+        line-height: 40px;
+    }
+
+    .txt_Cnt .txt_Cnt_sub .txt_Cnt_s {
+        font-size: 1rem;
+        line-height: 22px;
+    }
+
+    .txt_Cnt .txt_Cnt1_line1, .txt_Cnt .txt_Cnt1_line3 {
+        font-size: 1.2rem;
+    }
+
+    .txt_Cnt .txt_Cnt1_line2 {
+        font-size: 4rem;
+        line-height: 60px;
+    }
+
+    .earth-vec-img {
+        display: none;
+    }
+
+    .earth-vec-img-forMob {
+        display: block;
+        margin-top: 40px; 
+    }
+
+    .para-btn1 {
+        font-size: 0.7rem;
+        margin-top: 10px;
+        padding: 5px 8px;
+        background-color: rgba(114, 191, 68, 0.2);
+        border: 2px solid rgba(114, 191, 68, 0.02);
+    }
+}
+
 /* ----------------------------M E D I A -- Q U E R I E S -- F O R T A B L E T S ----------------------------- */
 /* IPAD 1,2 MINI AND AIR */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
