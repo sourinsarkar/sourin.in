@@ -71,6 +71,8 @@ div{
 
 .mainBox {
     display:grid;
+    grid-template-rows: 1fr;
+    grid-auto-rows: minmax(500px, auto);
 }
 
 .contentbox {
