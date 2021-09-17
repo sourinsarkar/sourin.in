@@ -2,8 +2,7 @@
     --clr-primary: rgba(59, 66, 72, 1);
     --clr-ele-blue: rgba(0, 34, 238, 1); 
     --clr-ele-indOrange : rgba(255, 119, 34, 1);
-    --ff-primary: poppins, sans-serif;
-    --ff-sec: acumin-pro, sans-serif;
+    --ff-primary: satoshi, sans-serif;
 }
 * {
     margin: 0;
@@ -32,6 +31,78 @@ body {
 div{
     display: block;
 }
+
+/*-----------------------------------------------F O N T S-------------------------------------*/
+@font-face {
+    font-family: 'satoshiblack';
+    src: url('fonts/satoshi-black-webfont.woff2') format('woff2'),
+         url('fonts/satoshi-black-webfont.woff') format('woff');
+
+}
+
+@font-face {
+    font-family: 'satoshiblack_italic';
+    src: url('fonts/satoshi-blackitalic-webfont.woff2') format('woff2'),
+         url('fonts/satoshi-blackitalic-webfont.woff') format('woff');
+
+}
+
+@font-face {
+    font-family: 'satoshibold';
+    src: url('fonts/satoshi-bold-webfont.woff2') format('woff2'),
+         url('fonts/satoshi-bold-webfont.woff') format('woff');
+
+}
+
+@font-face {
+    font-family: 'satoshibold_italic';
+    src: url('fonts/satoshi-bolditalic-webfont.woff2') format('woff2'),
+         url('fonts/satoshi-bolditalic-webfont.woff') format('woff');
+
+}
+
+@font-face {
+    font-family: 'satoshiitalic';
+    src: url('fonts/satoshi-italic-webfont.woff2') format('woff2'),
+         url('fonts/satoshi-italic-webfont.woff') format('woff');
+
+}
+
+@font-face {
+    font-family: 'satoshilight';
+    src: url('fonts/satoshi-light-webfont.woff2') format('woff2'),
+         url('fonts/satoshi-light-webfont.woff') format('woff');
+
+}
+
+@font-face {
+    font-family: 'satoshilight_italic';
+    src: url('fonts/satoshi-lightitalic-webfont.woff2') format('woff2'),
+         url('fonts/satoshi-lightitalic-webfont.woff') format('woff');
+
+}
+
+@font-face {
+    font-family: 'satoshimedium';
+    src: url('fonts/satoshi-medium-webfont.woff2') format('woff2'),
+         url('fonts/satoshi-medium-webfont.woff') format('woff');
+
+}
+
+@font-face {
+    font-family: 'satoshimedium_italic';
+    src: url('fonts/satoshi-mediumitalic-webfont.woff2') format('woff2'),
+         url('fonts/satoshi-mediumitalic-webfont.woff') format('woff');
+
+}
+
+@font-face {
+    font-family: 'satoshiregular';
+    src: url('fonts/satoshi-regular-webfont.woff2') format('woff2'),
+         url('fonts/satoshi-regular-webfont.woff') format('woff');
+}
+/*-----------------------------------------------F O N T S-------------------------------------*/
+
 
 /* .appWrapper {
     outline: none;
@@ -71,11 +142,35 @@ div{
 
 .mainBox {
     display:grid;
-    grid-template-rows: 1fr;
-    grid-auto-rows: minmax(500px, auto);
+    grid-template-columns: 1fr;
+    grid-auto-rows: minmax(300px, auto);
+    grid-column-gap: 30px;
+    min-height: 100vh;
+    align-items: center;
 }
 
 .contentbox {
-    background-color: #CCE8E2;
-    border-radius: 20px;
+    background-color: rgba(95, 187, 156,0.1);
+    border-radius: 2rem;
+}
+
+.txt_box {
+    padding: 2rem 3rem;
+}
+
+.main_txt {
+    font-weight: 800;
+    color: rgba(95, 187, 156,1);
+    font-size: 4rem;
+    line-height: 4.7rem;
+}
+
+.sub_txt {
+    font-weight: 500;
+    color: rgba(59, 66, 72, 0.5);
+    font-size: 2rem;
+}
+
+.txt_box2 {
+    padding-top: 1.5rem;
 }
