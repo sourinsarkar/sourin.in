@@ -2,7 +2,7 @@
     --clr-primary: rgba(59, 66, 72, 1);
     --clr-ele-blue: rgba(0, 34, 238, 1); 
     --clr-ele-indOrange : rgba(255, 119, 34, 1);
-    --ff-primary: Satoshi-Variable;
+    --ff-primary: 'Satoshi-Variable';
 }
 * {
     margin: 0;
@@ -86,4 +86,92 @@ div{
 
 .txt_box2 {
     padding-top: 1.5rem;
+}
+
+@media only screen and (min-width: 320px) {
+    .container {
+        padding: 0 20px;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .container {
+        padding: 0 60px;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .container {
+        padding: 0 40px;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    .container {
+        padding: 0 14px;
+    }
+}
+/*--------------------------------------------------------------------------------------*/
+@media only screen and (max-device-width: 320px) {
+    .txt_box {
+        padding: 2rem;
+    }
+
+    .main_txt {
+        font-size: 1.2rem;
+        line-height: 1.4rem;
+    }
+
+    .txt_box2 {
+        padding-top: 0.8rem;
+    }
+
+    .sub_txt {
+        font-size: 0.8rem;
+    }
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    .txt_box {
+        padding: 2rem;
+    }
+
+    .main_txt {
+        font-size: 1.8rem;
+        line-height: 2rem;
+    }
+
+    .sub_txt {
+        font-size: 1.2rem;
+    }
+}
+
+@media only screen and (min-device-width: 481px) and (max-device-width: 780px) {
+    .txt_box {
+        padding: 2rem;
+    }
+
+    .main_txt {
+        font-size: 2rem;
+        line-height: 2.3rem;
+    }
+
+    .sub_txt {
+        font-size: 1.4rem;
+    }
+}
+
+@media only screen and (min-device-width: 781px) and (max-device-width: 1024px) {
+    .txt_box {
+        padding: 2rem;
+    }
+
+    .main_txt {
+        font-size: 3rem;
+        line-height: 3.5rem;
+    }
+
+    .sub_txt {
+        font-size: 2rem;
+    }
 }
