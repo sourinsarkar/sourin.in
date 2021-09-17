@@ -73,7 +73,7 @@ div{
 
 .main_txt {
     font-weight: 700;
-    color: var(--clr-ele-blue);
+    color: rgba(95, 187, 156,1);
     font-size: 4rem;
     line-height: 4.7rem;
 }
