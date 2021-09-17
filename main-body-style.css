@@ -2,7 +2,7 @@
     --clr-primary: rgba(59, 66, 72, 1);
     --clr-ele-blue: rgba(0, 34, 238, 1); 
     --clr-ele-indOrange : rgba(255, 119, 34, 1);
-    --ff-primary: 'satoshi';
+    --ff-primary: Satoshi-Variable;
 }
 * {
     margin: 0;
@@ -35,32 +35,14 @@ div{
 /*-----------------------------------------------F O N T S-------------------------------------*/
 @font-face {
     font-family: 'Satoshi-Variable';
-    src: url('../fonts/Satoshi-Variable.woff2') format('woff2'),
-         url('../fonts/Satoshi-Variable.woff') format('woff'),
-         url('../fonts/Satoshi-Variable.ttf') format('truetype');
+    src: url('WEB/fonts/Satoshi-Variable.woff2') format('woff2'),
+         url('WEB/fonts/Satoshi-Variable.woff') format('woff'),
+         url('WEB/fonts/Satoshi-Variable.ttf') format('truetype');
          font-weight: 300 900;
          font-display: swap;
          font-style: normal;
 }
 /*-----------------------------------------------F O N T S-------------------------------------*/
-
-/* @media screen and (min-width: 1280px) {
-    .appWrapper {
-        padding: 0 80px;
-    }
-}
-
-@media screen and (min-width: 1024px) {
-    .appWrapper {
-        padding: 0 40px;
-    }
-}
-
-@media screen and (min-width: 600px) {
-    .appWrapper {
-        padding: 0 60px;
-    }
-} */
 
 .container {
     outline: none;
