@@ -2,7 +2,8 @@
     --clr-primary: rgba(59, 66, 72, 1);
     --clr-ele-blue: rgba(0, 34, 238, 1); 
     --clr-ele-indOrange : rgba(255, 119, 34, 1);
-    --ff-primary: 'Satoshi-Variable';
+    --ff-primary: poppins, sans-serif;
+    --ff-sec: acumin-pro, sans-serif;
 }
 * {
     margin: 0;
@@ -32,146 +33,1576 @@ div{
     display: block;
 }
 
-/*-----------------------------------------------F O N T S-------------------------------------*/
-@font-face {
-    font-family: 'Satoshi-Variable';
-    src: url('WEB/fonts/Satoshi-Variable.woff2') format('woff2'),
-         url('WEB/fonts/Satoshi-Variable.woff') format('woff'),
-         url('WEB/fonts/Satoshi-Variable.ttf') format('truetype');
-         font-weight: 300 900;
-         font-display: swap;
-         font-style: normal;
-}
-/*-----------------------------------------------F O N T S-------------------------------------*/
-
-.container {
+.appWrapper {
     outline: none;
     width: 100vw;
     min-height: 100vh;
-    max-width: 800px;
+    max-width: 1440px;
     margin: 0 auto;
     padding: 0 14px;
 }
 
-.mainBox {
-    display:grid;
-    grid-template-columns: 1fr;
-    grid-auto-rows: minmax(300px, auto);
-    grid-column-gap: 30px;
-    min-height: 100vh;
-    align-items: center;
-}
-
-.contentbox {
-    background-color: rgba(95, 187, 156,0.1);
-    border-radius: 2rem;
-}
-
-.txt_box {
-    padding: 2rem 3rem;
-}
-
-.main_txt {
-    font-weight: 700;
-    color: rgba(95, 187, 156,1);
-    font-size: 4rem;
-    line-height: 4.7rem;
-}
-
-.sub_txt {
-    font-weight: 500;
-    color: rgba(59, 66, 72, 0.5);
-    font-size: 2rem;
-}
-
-.txt_box2 {
-    padding-top: 1.5rem;
-}
-
-@media only screen and (min-width: 320px) {
-    .container {
-        padding: 0 20px;
+@media screen and (min-width: 1280px) {
+    .appWrapper {
+        padding: 0 80px;
     }
 }
 
-@media only screen and (min-width: 600px) {
-    .container {
-        padding: 0 60px;
-    }
-}
-
-@media only screen and (min-width: 1024px) {
-    .container {
+@media screen and (min-width: 1024px) {
+    .appWrapper {
         padding: 0 40px;
     }
 }
 
-@media only screen and (min-width: 1440px) {
-    .container {
-        padding: 0 14px;
-    }
-}
-/*--------------------------------------------------------------------------------------*/
-@media only screen and (max-device-width: 320px) {
-    .txt_box {
-        padding: 2rem;
-    }
-
-    .main_txt {
-        font-size: 1.2rem;
-        line-height: 1.4rem;
-    }
-
-    .txt_box2 {
-        padding-top: 0.8rem;
-    }
-
-    .sub_txt {
-        font-size: 0.8rem;
+@media screen and (min-width: 600px) {
+    .appWrapper {
+        padding: 0 60px;
     }
 }
 
+.main-txt {
+    font-weight: 500;
+    font-style: normal;
+    font-size: 7rem;
+    padding-top: 6rem;
+    position: relative;
+}
+
+.forSubCnt {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sub-txt {
+    font-weight: 500;
+    font-style: normal;
+    font-size: 2.3rem;
+    position: relative;
+    line-height: 45px;
+    color:rgba(59, 66, 72, 0.9  );
+    margin-bottom: 40px;    
+}
+
+.forSubCnt_part1 {
+    flex-basis: 45rem;
+}
+
+.second_Contr {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: minmax(300px, auto);
+    grid-column-gap: 30px;
+    padding-top: 80px;
+}
+
+.second_Contr_parts {
+    width: 100%;
+}
+/* FOR THE FIRST BOX */
+.second_Contr_part1, .second_Contr_part1:hover {
+    background-color: var(--clr-ele-blue);
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.txt_Cnt {
+    margin: 2rem 2.5rem;
+}
+
+.txt_Cnt .txt_Cnt_head {
+    width: 100%;
+}
+
+.txt_Cnt .txt_Cnt_head .txt_Cnt_h {
+    font-weight: 500;
+    font-size: 2.8rem;
+    line-height: 60px;
+    color: rgba(255,255,255,0.95);
+}
+
+.txt_Cnt .txt_Cnt_sub {
+    margin-top: 10px;
+}
+
+.txt_Cnt .txt_Cnt_sub .txt_Cnt_s {
+    font-family: acumin-pro, sans-serif;
+    font-style: normal;
+    font-size: 1.6rem;
+    line-height: 28px;  
+    color: rgba(255,255,255,0.95);
+}
+/* FOR THE SECOND BOX */
+.second_Contr_part2 {
+    border: 1px solid rgba(59, 66, 72, 0.8);;
+    border-radius: 12px;
+    display: flex;
+}
+
+.second_Contr .second_Contr_part2 .box_Cnt  {
+    width:50%;
+}
+
+.txt_Cnt .txt_Cnt1_line1, .txt_Cnt .txt_Cnt1_line3 {
+    font-family: var(--ff-primary);
+    font-weight: 600;
+    font-size: 1.5rem;
+    position: relative;
+}
+
+.txt_Cnt .txt_Cnt1_line2 {
+    font-family: var(--ff-primary);
+    font-weight: 700;
+    font-size: 5rem;
+    line-height: 90px;
+    color: rgba(114, 191, 68, 1);
+    position: relative;
+}
+
+.para-btn1 {
+    font-family: var(--ff-primary);
+    font-weight: 450;
+    font-size: 1rem;
+    text-align: center;
+    color: rgba(114, 191, 68, 1);
+    background-color: transparent;
+    border: 2px solid rgba(114, 191, 68, 1);
+    border-radius: 50px;
+    margin-top: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.para-btn1:hover {
+    background-color: rgba(114, 191, 68, 0.2);
+    border: 2px solid rgba(114, 191, 68, 0.02);
+    transition-duration: 0.3s;
+}
+
+.para-btn1-foriPAD {
+    display: none;
+    font-family: var(--ff-primary);
+    font-weight: 450;
+    font-size: 1rem;
+    text-align: center;
+    color: rgba(114, 191, 68, 1);
+    background-color: transparent;
+    border: 2px solid rgba(114, 191, 68, 1);
+    border-radius: 50px;
+    margin-top: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.para-btn1-foriPAD:hover {
+    background-color: rgba(114, 191, 68, 0.2);
+    border: 2px solid rgba(114, 191, 68, 0.02);
+}
+
+.earth-vec-img {
+    margin-top: 1rem;
+}
+
+.earth-vec-img-forMob {
+    display: none;
+}
+
+hr {
+    border: none;
+    height: 0.5px;
+    background-color: rgba(59, 66, 72, 1);
+    width: 100%;
+    display: block;
+}
+/* -----------------------------------------ALL MEDIA QUERIES-------------------------------------------- */
+/* SMARTPHONES -- POTRAIT AND LANDSCAPE */
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
-    .txt_box {
-        padding: 2rem;
+    .main-txt {
+        font-size: 3rem;
+        padding-top: 3.5rem;
+        line-height: 60px;
     }
 
-    .main_txt {
-        font-size: 1.8rem;
-        line-height: 2rem;
+    .forSubCnt_part1 {
+        flex-basis: 20rem;
     }
 
-    .sub_txt {
+    .sub-txt {
+        font-size: 1.5rem;
+        line-height: 26px;
+        padding-top: 2rem;
+    }
+
+    .second_Contr {
+        display: flex;
+        flex-wrap:wrap;
+        padding-top: 20px;
+        padding-bottom: 30px;
+    }
+
+    .txt_Cnt {
+        margin: 1rem 1.5rem;
+    }
+
+    .second_Contr_parts {
+        /* min-height: 15rem; */
+        flex-wrap: wrap;
+        margin: 15px auto;
+    }
+
+    .txt_Cnt .txt_Cnt_head .txt_Cnt_h {
+        font-size: 2rem;
+        line-height: 40px;
+    }
+
+    .txt_Cnt .txt_Cnt_sub .txt_Cnt_s {
+        font-size: 1rem;
+        line-height: 22px;
+    }
+
+    .txt_Cnt .txt_Cnt1_line1, .txt_Cnt .txt_Cnt1_line3 {
         font-size: 1.2rem;
     }
+
+    .txt_Cnt .txt_Cnt1_line2 {
+        font-size: 4rem;
+        line-height: 60px;
+    }
+
+    .earth-vec-img {
+        display: none;
+    }
+
+    .earth-vec-img-forMob {
+        display: block;
+        margin-top: 40px; 
+    }
+
+    .para-btn1 {
+        font-size: 0.7rem;
+        margin-top: 10px;
+        padding: 5px 8px;
+        background-color: rgba(114, 191, 68, 0.2);
+        border: 2px solid rgba(114, 191, 68, 0.02);
+    }
 }
 
-@media only screen and (min-device-width: 481px) and (max-device-width: 780px) {
-    .txt_box {
-        padding: 2rem;
-    }
-
-    .main_txt {
-        font-size: 2rem;
-        line-height: 2.3rem;
-    }
-
-    .sub_txt {
-        font-size: 1.4rem;
-    }
-}
-
-@media only screen and (min-device-width: 781px) and (max-device-width: 1024px) {
-    .txt_box {
-        padding: 2rem;
-    }
-
-    .main_txt {
+/* SMARTPHONES -- POTRAIT */
+@media only screen and (max-width: 320px)  and (-webkit-device-pixel-ratio: 2) and (orientation: portrait) {
+    .main-txt {
         font-size: 3rem;
-        line-height: 3.5rem;
+        padding-top: 3.5rem;
+        line-height: 60px;
     }
 
-    .sub_txt {
+    .forSubCnt_part1 {
+        flex-basis: 20rem;
+    }
+
+    .sub-txt {
+        font-size: 1.5rem;
+        line-height: 26px;
+        padding-top: 2rem;
+    }
+    
+    .second_Contr {
+        display: flex;
+        flex-wrap:wrap;
+        padding-top: 20px;
+        padding-bottom: 30px;
+    }
+
+    .txt_Cnt {
+        margin: 1rem 1.5rem;
+    }
+
+    .second_Contr_parts {
+        /* min-height: 15rem; */
+        flex-wrap: wrap;
+        margin: 15px auto;
+
+    }
+
+    .txt_Cnt .txt_Cnt_head .txt_Cnt_h {
         font-size: 2rem;
+        line-height: 40px;
+    }
+
+    .txt_Cnt .txt_Cnt_sub .txt_Cnt_s {
+        font-size: 1rem;
+        line-height: 22px;
+    }
+
+    .txt_Cnt .txt_Cnt1_line1, .txt_Cnt .txt_Cnt1_line3 {
+        font-size: 1.2rem;
+    }
+
+    .txt_Cnt .txt_Cnt1_line2 {
+        font-size: 4rem;
+        line-height: 60px;
+    }
+
+    .earth-vec-img {
+        display: none;
+    }
+
+    .earth-vec-img-forMob {
+        display: block;
+        margin-top: 40px; 
+    }
+    
+
+    .para-btn1 {
+        font-size: 0.7rem;
+        margin-top: 10px;
+        padding: 5px 8px;
+        background-color: rgba(114, 191, 68, 0.2);
+        border: 2px solid rgba(114, 191, 68, 0.02);
+    }
+}
+
+/* SMARTPHONES -- LANDSCAPE */
+@media only screen and (min-width: 321px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape){
+    .main-txt {
+        font-size: 3rem;
+        padding-top: 3.5rem;
+        line-height: 60px;
+    }
+
+    .forSubCnt_part1 {
+        flex-basis: 20rem;
+    }
+
+    .sub-txt {
+        font-size: 1.5rem;
+        line-height: 26px;
+        padding-top: 2rem;
+    }
+    
+    .second_Contr {
+        display: flex;
+        flex-wrap:wrap;
+        padding-top: 20px;
+        padding-bottom: 30px;
+    }
+
+    .txt_Cnt {
+        margin: 1rem 1.5rem;
+    }
+
+    .second_Contr_parts {
+        /* min-height: 15rem; */
+        flex-wrap: wrap;
+        margin: 15px auto;
+
+    }
+
+    .txt_Cnt .txt_Cnt_head .txt_Cnt_h {
+        font-size: 2rem;
+        line-height: 40px;
+    }
+
+    .txt_Cnt .txt_Cnt_sub .txt_Cnt_s {
+        font-size: 1rem;
+        line-height: 22px;
+    }
+
+    .txt_Cnt .txt_Cnt1_line1, .txt_Cnt .txt_Cnt1_line3 {
+        font-size: 1.2rem;
+    }
+
+    .txt_Cnt .txt_Cnt1_line2 {
+        font-size: 4rem;
+        line-height: 60px;
+    }
+
+    .earth-vec-img {
+        display: none;
+    }
+
+    .earth-vec-img-forMob {
+        display: block;
+        margin-top: 40px; 
+    }
+    
+
+    .para-btn1 {
+        font-size: 0.7rem;
+        margin-top: 10px;
+        padding: 5px 8px;
+        background-color: rgba(114, 191, 68, 0.2);
+        border: 2px solid rgba(114, 191, 68, 0.02);
+    }
+}
+
+/* GALAXY S4, S5 AND NOTE 3 */
+@media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (-webkit-device-pixel-ratio: 3) {
+    .main-txt {
+        font-size: 3rem;
+        padding-top: 3.5rem;
+        line-height: 60px;
+    }
+
+    .sub-txt {
+        font-size: 1.5rem;
+        line-height: 26px;
+        padding-top: 2rem;
+    }
+
+    .second_Contr {
+        display: flex;
+        flex-wrap:wrap;
+        padding-top: 20px;
+        padding-bottom: 30px;
+    }
+
+    .txt_Cnt {
+        margin: 1rem 1.5rem;
+    }
+
+    .second_Contr_parts {
+        /* min-height: 15rem; */
+        flex-wrap: wrap;
+        margin: 15px auto;
+    }
+
+    .txt_Cnt .txt_Cnt_head .txt_Cnt_h {
+        font-size: 2rem;
+        line-height: 40px;
+    }
+
+    .txt_Cnt .txt_Cnt_sub .txt_Cnt_s {
+        font-size: 1rem;
+        line-height: 22px;
+    }
+
+    .txt_Cnt .txt_Cnt1_line1, .txt_Cnt .txt_Cnt1_line3 {
+        font-size: 1.2rem;
+    }
+
+    .txt_Cnt .txt_Cnt1_line2 {
+        font-size: 4rem;
+        line-height: 60px;
+    }
+
+    .earth-vec-img {
+        display: none;
+    }
+
+    .earth-vec-img-forMob {
+        display: block;
+        margin-top: 40px; 
+    }
+    
+
+    .para-btn1 {
+        font-size: 0.7rem;
+        margin-top: 10px;
+        padding: 5px 8px;
+        background-color: rgba(114, 191, 68, 0.2);
+        border: 2px solid rgba(114, 191, 68, 0.02);
+    }
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait) {
+    .main-txt {
+        font-size: 3rem;
+        padding-top: 3.5rem;
+        line-height: 60px;
+    }
+
+    .sub-txt {
+        font-size: 1.5rem;
+        line-height: 26px;
+        padding-top: 2rem;
+    }
+
+    .second_Contr {
+        display: flex;
+        flex-wrap:wrap;
+        padding-top: 20px;
+        padding-bottom: 30px;
+    }
+
+    .txt_Cnt {
+        margin: 1rem 1.5rem;
+    }
+
+    .second_Contr_parts {
+        /* min-height: 15rem; */
+        flex-wrap: wrap;
+        margin: 15px auto;
+
+    }
+
+    .txt_Cnt .txt_Cnt_head .txt_Cnt_h {
+        font-size: 2rem;
+        line-height: 40px;
+    }
+
+    .txt_Cnt .txt_Cnt_sub .txt_Cnt_s {
+        font-size: 1rem;
+        line-height: 22px;
+    }
+
+    .txt_Cnt .txt_Cnt1_line1, .txt_Cnt .txt_Cnt1_line3 {
+        font-size: 1.2rem;
+    }
+
+    .txt_Cnt .txt_Cnt1_line2 {
+        font-size: 4rem;
+        line-height: 60px;
+    }
+
+    .earth-vec-img {
+        display: none;
+    }
+
+    .earth-vec-img-forMob {
+        display: block;
+        margin-top: 40px; 
+    }
+    
+    .para-btn1 {
+        font-size: 0.7rem;
+        margin-top: 10px;
+        padding: 5px 8px;
+        background-color: rgba(114, 191, 68, 0.2);
+        border: 2px solid rgba(114, 191, 68, 0.02);
+    }
+}
+
+@media screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 4)  {
+    .main-txt {
+        font-size: 3rem;
+        padding-top: 3.5rem;
+        line-height: 60px;
+    }
+
+    .sub-txt {
+        font-size: 1.5rem;
+        line-height: 26px;
+        padding-top: 2rem;
+    }
+
+    .second_Contr {
+        display: flex;
+        flex-wrap:wrap;
+        padding-top: 20px;
+        padding-bottom: 30px;
+    }
+
+    .txt_Cnt {
+        margin: 1rem 1.5rem;
+    }
+
+    .second_Contr_parts {
+        /* min-height: 15rem; */
+        flex-wrap: wrap;
+        margin: 15px auto;
+
+    }
+
+    .txt_Cnt .txt_Cnt_head .txt_Cnt_h {
+        font-size: 2rem;
+        line-height: 40px;
+    }
+
+    .txt_Cnt .txt_Cnt_sub .txt_Cnt_s {
+        font-size: 1rem;
+        line-height: 2  2px;
+    }
+
+    .txt_Cnt .txt_Cnt1_line1, .txt_Cnt .txt_Cnt1_line3 {
+        font-size: 1.2rem;
+    }
+
+    .txt_Cnt .txt_Cnt1_line2 {
+        font-size: 4rem;
+        line-height: 60px;
+    }
+
+    .earth-vec-img {
+        display: none;
+    }
+
+    .earth-vec-img-forMob {
+        display: block;
+        margin-top: 40px; 
+    }
+    
+
+    .para-btn1 {
+        font-size: 0.7rem;
+        margin-top: 10px;
+        padding: 5px 8px;
+        background-color: rgba(114, 191, 68, 0.2);
+        border: 2px solid rgba(114, 191, 68, 0.02);
+    }
+}
+
+@media screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 4) and (orientation: portrait) {
+    .main-txt {
+        font-size: 3rem;
+        padding-top: 3.5rem;
+        line-height: 60px;
+    }
+
+    .sub-txt {
+        font-size: 1.5rem;
+        line-height: 26px;
+        padding-top: 2rem;
+    }
+
+    .second_Contr {
+        display: flex;
+        flex-wrap:wrap;
+        padding-top: 20px;
+        padding-bottom: 30px;
+    }
+
+    .txt_Cnt {
+        margin: 1rem 1.5rem;
+    }
+
+    .second_Contr_parts {
+        /* min-height: 15rem; */
+        flex-wrap: wrap;
+        margin: 15px auto;
+
+    }
+
+    .txt_Cnt .txt_Cnt_head .txt_Cnt_h {
+        font-size: 2rem;
+        line-height: 40px;
+    }
+
+    .txt_Cnt .txt_Cnt_sub .txt_Cnt_s {
+        font-size: 1rem;
+        line-height: 22px;
+    }
+
+    .txt_Cnt .txt_Cnt1_line1, .txt_Cnt .txt_Cnt1_line3 {
+        font-size: 1.2rem;
+    }
+
+    .txt_Cnt .txt_Cnt1_line2 {
+        font-size: 4rem;
+        line-height: 60px;
+    }
+
+    .earth-vec-img {
+        display: none;
+    }
+
+    .earth-vec-img-forMob {
+        display: block;
+        margin-top: 40px; 
+    }
+    
+
+    .para-btn1 {
+        font-size: 0.7rem;
+        margin-top: 10px;
+        padding: 5px 8px;
+        background-color: rgba(114, 191, 68, 0.2);
+        border: 2px solid rgba(114, 191, 68, 0.02);
+    }
+}
+
+@media screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 4) and (orientation: landscape) {
+    .main-txt {
+        font-size: 3rem;
+        padding-top: 3.5rem;
+        line-height: 60px;
+    }
+
+    .sub-txt {
+        font-size: 1.5rem;
+        line-height: 26px;
+        padding-top: 2rem;
+    }
+    
+    .second_Contr {
+        display: flex;
+        flex-wrap:wrap;
+        padding-top: 20px;
+        padding-bottom: 30px;
+    }
+
+    .txt_Cnt {
+        margin: 1rem 1.5rem;
+    }
+
+    .second_Contr_parts {
+        /* min-height: 15rem; */
+        flex-wrap: wrap;
+        margin: 15px auto;
+
+    }
+
+    .txt_Cnt .txt_Cnt_head .txt_Cnt_h {
+        font-size: 2rem;
+        line-height: 40px;
+    }
+
+    .txt_Cnt .txt_Cnt_sub .txt_Cnt_s {
+        font-size: 1rem;
+        line-height: 22px;
+    }
+
+    .txt_Cnt .txt_Cnt1_line1, .txt_Cnt .txt_Cnt1_line3 {
+        font-size: 1.2rem;
+    }
+
+    .txt_Cnt .txt_Cnt1_line2 {
+        font-size: 4rem;
+        line-height: 60px;
+    }
+
+    .earth-vec-img {
+        display: none;
+    }
+
+    .earth-vec-img-forMob {
+        display: block;
+        margin-top: 40px; 
+    }
+    
+
+    .para-btn1 {
+        font-size: 0.7rem;
+        margin-top: 10px;
+        padding: 5px 8px;
+        background-color: rgba(114, 191, 68, 0.2);
+        border: 2px solid rgba(114, 191, 68, 0.02);
+    }
+}
+
+/* IPHONE 6/7/8 (+) -version*/
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) {
+    .main-txt {
+        font-size: 3rem;
+        padding-top: 3.5rem;
+        line-height: 60px;
+    }
+
+    .sub-txt {
+        font-size: 1.5rem;
+        line-height: 26px;
+        padding-top: 2rem;
+    }
+    
+    .second_Contr {
+        display: flex;
+        flex-wrap:wrap;
+        padding-top: 20px;
+        padding-bottom: 30px;
+    }
+
+    .txt_Cnt {
+        margin: 1rem 1.5rem;
+    }
+
+    .second_Contr_parts {
+        /* min-height: 15rem; */
+        flex-wrap: wrap;
+        margin: 15px auto;
+
+    }
+
+    .txt_Cnt .txt_Cnt_head .txt_Cnt_h {
+        font-size: 2rem;
+        line-height: 40px;
+    }
+
+    .txt_Cnt .txt_Cnt_sub .txt_Cnt_s {
+        font-size: 1rem;
+        line-height: 22px;
+    }
+
+    .txt_Cnt .txt_Cnt1_line1, .txt_Cnt .txt_Cnt1_line3 {
+        font-size: 1.2rem;
+    }
+
+    .txt_Cnt .txt_Cnt1_line2 {
+        font-size: 4rem;
+        line-height: 60px;
+    }
+
+    .earth-vec-img {
+        display: none;
+    }
+
+    .earth-vec-img-forMob {
+        display: block;
+        margin-top: 40px; 
+    }
+    
+
+    .para-btn1 {
+        font-size: 0.7rem;
+        margin-top: 10px;
+        padding: 5px 8px;
+        background-color: rgba(114, 191, 68, 0.2);
+        border: 2px solid rgba(114, 191, 68, 0.02);
+    }
+}
+
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3)and (orientation: portrait) {
+    .main-txt {
+        font-size: 3rem;
+        padding-top: 3.5rem;
+        line-height: 60px;
+    }
+
+    .sub-txt {
+        font-size: 1.5rem;
+        line-height: 26px;
+        padding-top: 2rem;
+    }
+    
+    .second_Contr {
+        display: flex;
+        flex-wrap:wrap;
+        padding-top: 20px;
+        padding-bottom: 30px;
+    }
+
+    .txt_Cnt {
+        margin: 1rem 1.5rem;
+    }
+
+    .second_Contr_parts {
+        /* min-height: 15rem; */
+        flex-wrap: wrap;
+        margin: 15px auto;
+
+    }
+
+    .txt_Cnt .txt_Cnt_head .txt_Cnt_h {
+        font-size: 2rem;
+        line-height: 40px;
+    }
+
+    .txt_Cnt .txt_Cnt_sub .txt_Cnt_s {
+        font-size: 1rem;
+        line-height: 22px;
+    }
+
+    .txt_Cnt .txt_Cnt1_line1, .txt_Cnt .txt_Cnt1_line3 {
+        font-size: 1.2rem;
+    }
+
+    .txt_Cnt .txt_Cnt1_line2 {
+        font-size: 4rem;
+        line-height: 60px;
+    }
+
+    .earth-vec-img {
+        display: none;
+    }
+
+    .earth-vec-img-forMob {
+        display: block;
+        margin-top: 40px; 
+    }
+    
+
+    .para-btn1 {
+        font-size: 0.7rem;
+        margin-top: 10px;
+        padding: 5px 8px;
+        background-color: rgba(114, 191, 68, 0.2);
+        border: 2px solid rgba(114, 191, 68, 0.02);
+    }
+}
+
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3)and (orientation: landscape) {
+    .main-txt {
+        font-size: 3rem;
+        padding-top: 3.5rem;
+        line-height: 60px;
+    }
+
+    .sub-txt {
+        font-size: 1.5rem;
+        line-height: 26px;
+        padding-top: 2rem;
+    }
+    
+    .second_Contr {
+        display: flex;
+        flex-wrap:wrap;
+        padding-top: 20px;
+        padding-bottom: 30px;
+    }
+
+    .txt_Cnt {
+        margin: 1rem 1.5rem;
+    }
+
+    .second_Contr_parts {
+        /* min-height: 15rem; */
+        flex-wrap: wrap;
+        margin: 15px auto;
+
+    }
+
+    .txt_Cnt .txt_Cnt_head .txt_Cnt_h {
+        font-size: 2rem;
+        line-height: 40px;
+    }
+
+    .txt_Cnt .txt_Cnt_sub .txt_Cnt_s {
+        font-size: 1rem;
+        line-height: 22px;
+    }
+
+    .txt_Cnt .txt_Cnt1_line1, .txt_Cnt .txt_Cnt1_line3 {
+        font-size: 1.2rem;
+    }
+
+    .txt_Cnt .txt_Cnt1_line2 {
+        font-size: 4rem;
+        line-height: 60px;
+    }
+
+    .earth-vec-img {
+        display: none;
+    }
+
+    .earth-vec-img-forMob {
+        display: block;
+        margin-top: 40px; 
+    }
+    
+
+    .para-btn1 {
+        font-size: 0.7rem;
+        margin-top: 10px;
+        padding: 5px 8px;
+        background-color: rgba(114, 191, 68, 0.2);
+        border: 2px solid rgba(114, 191, 68, 0.02);
+    }
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
+    .main-txt {
+        font-size: 3rem;
+        padding-top: 3.5rem;
+        line-height: 60px;
+    }
+
+    .sub-txt {
+        font-size: 1.5rem;
+        line-height: 26px;
+        padding-top: 2rem;
+    }
+    
+    .second_Contr {
+        display: flex;
+        flex-wrap:wrap;
+        padding-top: 20px;
+        padding-bottom: 30px;
+    }
+
+    .txt_Cnt {
+        margin: 1rem 1.5rem;
+    }
+
+    .second_Contr_parts {
+        /* min-height: 15rem; */
+        flex-wrap: wrap;
+        margin: 15px auto;
+
+    }
+
+    .txt_Cnt .txt_Cnt_head .txt_Cnt_h {
+        font-size: 2rem;
+        line-height: 40px;
+    }
+
+    .txt_Cnt .txt_Cnt_sub .txt_Cnt_s {
+        font-size: 1rem;
+        line-height: 22px;
+    }
+
+    .txt_Cnt .txt_Cnt1_line1, .txt_Cnt .txt_Cnt1_line3 {
+        font-size: 1.2rem;
+    }
+
+    .txt_Cnt .txt_Cnt1_line2 {
+        font-size: 4rem;
+        line-height: 60px;
+    }
+
+    .earth-vec-img {
+        display: none;
+    }
+
+    .earth-vec-img-forMob {
+        display: block;
+        margin-top: 40px; 
+    }
+    
+
+    .para-btn1 {
+        font-size: 0.7rem;
+        margin-top: 10px;
+        padding: 5px 8px;
+        background-color: rgba(114, 191, 68, 0.2);
+        border: 2px solid rgba(114, 191, 68, 0.02);
+    }
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3)and (orientation: portrait) {
+    .main-txt {
+        font-size: 3rem;
+        padding-top: 3.5rem;
+        line-height: 60px;
+    }
+
+    .sub-txt {
+        font-size: 1.5rem;
+        line-height: 26px;
+        padding-top: 2rem;
+    }
+    
+    .second_Contr {
+        display: flex;
+        flex-wrap:wrap;
+        padding-top: 20px;
+        padding-bottom: 30px;
+    }
+
+    .txt_Cnt {
+        margin: 1rem 1.5rem;
+    }
+
+    .second_Contr_parts {
+        /* min-height: 15rem; */
+        flex-wrap: wrap;
+        margin: 15px auto;
+
+    }
+
+    .txt_Cnt .txt_Cnt_head .txt_Cnt_h {
+        font-size: 2rem;
+        line-height: 40px;
+    }
+
+    .txt_Cnt .txt_Cnt_sub .txt_Cnt_s {
+        font-size: 1rem;
+        line-height: 22px;
+    }
+
+    .txt_Cnt .txt_Cnt1_line1, .txt_Cnt .txt_Cnt1_line3 {
+        font-size: 1.2rem;
+    }
+
+    .txt_Cnt .txt_Cnt1_line2 {
+        font-size: 4rem;
+        line-height: 60px;
+    }
+
+    .earth-vec-img {
+        display: none;
+    }
+
+    .earth-vec-img-forMob {
+        display: block;
+        margin-top: 40px; 
+    }
+    
+    .para-btn1 {
+        font-size: 0.7rem;
+        margin-top: 10px;
+        padding: 5px 8px;
+        background-color: rgba(114, 191, 68, 0.2);
+        border: 2px solid rgba(114, 191, 68, 0.02);
+    }
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3)and (orientation: landscape) {
+    .main-txt {
+        font-size: 3rem;
+        padding-top: 3.5rem;
+        line-height: 60px;
+    }
+
+    .sub-txt {
+        font-size: 1.5rem;
+        line-height: 26px;
+        padding-top: 2rem;
+    }
+    
+    .second_Contr {
+        display: flex;
+        flex-wrap:wrap;
+        padding-top: 20px;
+        padding-bottom: 30px;
+    }
+
+    .txt_Cnt {
+        margin: 1rem 1.5rem;
+    }
+
+    .second_Contr_parts {
+        /* min-height: 15rem; */
+        flex-wrap: wrap;
+        margin: 15px auto;
+
+    }
+
+    .txt_Cnt .txt_Cnt_head .txt_Cnt_h {
+        font-size: 2rem;
+        line-height: 40px;
+    }
+
+    .txt_Cnt .txt_Cnt_sub .txt_Cnt_s {
+        font-size: 1rem;
+        line-height: 22px;
+    }
+
+    .txt_Cnt .txt_Cnt1_line1, .txt_Cnt .txt_Cnt1_line3 {
+        font-size: 1.2rem;
+    }
+
+    .txt_Cnt .txt_Cnt1_line2 {
+        font-size: 4rem;
+        line-height: 60px;
+    }
+
+    .earth-vec-img {
+        display: none;
+    }
+
+    .earth-vec-img-forMob {
+        display: block;
+        margin-top: 40px; 
+    }
+    
+
+    .para-btn1 {
+        font-size: 0.7rem;
+        margin-top: 10px;
+        padding: 5px 8px;
+        background-color: rgba(114, 191, 68, 0.2);
+        border: 2px solid rgba(114, 191, 68, 0.02);
+    }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 719px) {
+    .main-txt {
+        font-size: 3rem;
+        padding-top: 3.5rem;
+        line-height: 60px;
+    }
+
+    .forSubCnt_part1 {
+        flex-basis: 20rem;
+    }
+
+    .sub-txt {
+        font-size: 1.5rem;
+        line-height: 26px;
+        padding-top: 2rem;
+    }
+
+    .second_Contr {
+        display: flex;
+        flex-wrap:wrap;
+        padding-top: 20px;
+        padding-bottom: 30px;
+    }
+
+    .txt_Cnt {
+        margin: 1rem 1.5rem;
+    }
+
+    .second_Contr_parts {
+        /* min-height: 15rem; */
+        flex-wrap: wrap;
+        margin: 15px auto;
+    }
+
+    .txt_Cnt .txt_Cnt_head .txt_Cnt_h {
+        font-size: 2rem;
+        line-height: 40px;
+    }
+
+    .txt_Cnt .txt_Cnt_sub .txt_Cnt_s {
+        font-size: 1rem;
+        line-height: 22px;
+    }
+
+    .txt_Cnt .txt_Cnt1_line1, .txt_Cnt .txt_Cnt1_line3 {
+        font-size: 1.2rem;
+    }
+
+    .txt_Cnt .txt_Cnt1_line2 {
+        font-size: 4rem;
+        line-height: 60px;
+    }
+
+    .earth-vec-img {
+        display: none;
+    }
+
+    .earth-vec-img-forMob {
+        display: block;
+        margin-top: 40px; 
+    }
+
+    .para-btn1 {
+        font-size: 0.7rem;
+        margin-top: 10px;
+        padding: 5px 8px;
+        background-color: rgba(114, 191, 68, 0.2);
+        border: 2px solid rgba(114, 191, 68, 0.02);
+    }
+}
+
+/* ----------------------------M E D I A -- Q U E R I E S -- F O R T A B L E T S ----------------------------- */
+/* IPAD 1,2 MINI AND AIR */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+    .main-txt {
+        font-size: 3rem;
+        padding-top: 3.5rem;
+        line-height: 60px;
+    }
+
+    .forSubCnt_part1 {
+        flex-basis: 20rem;
+    }
+
+    .sub-txt {
+        font-size: 1.5rem;
+        line-height: 26px;
+        padding-top: 2rem;
+    }
+    
+    .second_Contr {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-auto-rows: minmax(200px, auto);
+        grid-column-gap: 30px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    
+    .txt_Cnt {
+        margin: 1rem 1.5rem;
+    }
+
+    .second_Contr_parts {
+        /* min-height: 15rem; */
+        flex-wrap: wrap;
+        margin: 15px auto;
+        
+    }
+    
+    .txt_Cnt .txt_Cnt_head .txt_Cnt_h {
+        font-size: 2rem;
+        line-height: 40px;
+    }
+    
+    .txt_Cnt .txt_Cnt_sub .txt_Cnt_s {
+        font-size: 1rem;
+        line-height: 22px;
+    }
+    
+    .txt_Cnt .txt_Cnt1_line1, .txt_Cnt .txt_Cnt1_line3 {
+        font-size: 1.2rem;
+    }
+    
+    .txt_Cnt .txt_Cnt1_line3 {
+        line-height: 22px;
+    }
+    
+    .txt_Cnt .txt_Cnt1_line2 {
+        font-size: 4rem;
+        line-height: 60px;
+    }
+    
+    .earth-vec-img {
+        display: none;
+    }
+    
+    .earth-vec-img-forMob {
+        display: block;
+        margin-top: 40px; 
+    }
+    
+    .para-btn1 {
+        font-size: 0.7rem;
+        margin-top: 10px;
+        padding: 5px 8px;
+        background-color: rgba(114, 191, 68, 0.2);
+        border: 2px solid rgba(114, 191, 68, 0.02);
+    }
+}
+/* IPAD 1,2 MINI AND AIR -- POTRAIT*/
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
+    .main-txt {
+        font-size: 3rem;
+        padding-top: 3.5rem;
+        line-height: 60px;
+    }
+    
+    .forSubCnt_part1 {
+        flex-basis: 20rem;
+    }
+    
+    .sub-txt {
+        font-size: 1.5rem;
+        line-height: 26px;
+        padding-top: 2rem;
+    }
+    
+    .second_Contr {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-auto-rows: minmax(200px, auto);
+        grid-column-gap: 30px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    
+    .txt_Cnt {
+        margin: 1rem 1.5rem;
+    }
+    
+    .second_Contr_parts {
+        /* min-height: 15rem; */
+        flex-wrap: wrap;
+        margin: 15px auto;
+        
+    }
+    
+    .txt_Cnt .txt_Cnt_head .txt_Cnt_h {
+        font-size: 2rem;
+        line-height: 40px;
+    }
+    
+    .txt_Cnt .txt_Cnt_sub .txt_Cnt_s {
+        font-size: 1rem;
+        line-height: 22px;
+    }
+    
+    .txt_Cnt .txt_Cnt1_line1, .txt_Cnt .txt_Cnt1_line3 {
+        font-size: 1.2rem;
+    }
+    
+    .txt_Cnt .txt_Cnt1_line3 {
+        line-height: 22px;
+    }
+    
+    .txt_Cnt .txt_Cnt1_line2 {
+        font-size: 4rem;
+        line-height: 60px;
+    }
+    
+    .earth-vec-img {
+        display: none;
+    }
+    
+    .earth-vec-img-forMob {
+        display: block;
+        margin-top: 40px; 
+    }
+    
+    .para-btn1 {
+        font-size: 0.7rem;
+        margin-top: 10px;
+        padding: 5px 8px;
+        background-color: rgba(114, 191, 68, 0.2);
+        border: 2px solid rgba(114, 191, 68, 0.02);
+    }
+}
+/* IPAD 1,2 MINI AND AIR -- LANDSCAPE */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
+    .main-txt {
+        font-size: 3rem;
+        padding-top: 3.5rem;
+        line-height: 60px;
+    }
+    
+    .forSubCnt_part1 {
+        flex-basis: 20rem;
+    }
+    
+    .sub-txt {
+        font-size: 1.5rem;
+        line-height: 26px;
+        padding-top: 2rem;
+    }
+    
+    .second_Contr {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-auto-rows: minmax(200px, auto);
+        grid-column-gap: 30px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    
+    .txt_Cnt {
+        margin: 1rem 1.5rem;
+    }
+
+    .second_Contr_parts {
+        /* min-height: 15rem; */
+        flex-wrap: wrap;
+        margin: 15px auto;
+
+    }
+
+    .txt_Cnt .txt_Cnt_head .txt_Cnt_h {
+        font-size: 2rem;
+        line-height: 40px;
+    }
+
+    .txt_Cnt .txt_Cnt_sub .txt_Cnt_s {
+        font-size: 1rem;
+        line-height: 22px;
+    }
+
+    .txt_Cnt .txt_Cnt1_line1, .txt_Cnt .txt_Cnt1_line3 {
+        font-size: 1.2rem;
+    }
+
+    .txt_Cnt .txt_Cnt1_line3 {
+        line-height: 22px;
+    }
+
+    .txt_Cnt .txt_Cnt1_line2 {
+        font-size: 4rem;
+        line-height: 60px;
+    }
+
+    .earth-vec-img {
+        display: none;
+    }
+
+    .earth-vec-img-forMob {
+        display: block;
+        margin-top: 40px; 
+    }
+
+    .para-btn1 {
+        font-size: 0.7rem;
+        margin-top: 10px;
+        padding: 5px 8px;
+        background-color: rgba(114, 191, 68, 0.2);
+        border: 2px solid rgba(114, 191, 68, 0.02);
+    }
+}
+
+/* IPAD PRO OR IPAD 12.5 */
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px)and (-webkit-min-device-pixel-ratio: 2) {
+    .appWrapper {
+        padding: 0 40px;
+    }
+    
+    .main-txt {
+        font-size: 7rem;
+        padding-top: 5rem;
+        line-height: 120px;
+    }
+
+    .forSubCnt_part1 {
+        flex-basis: 40rem;
+    }
+
+    .sub-txt {
+        font-size: 2.2rem;
+        line-height: 40px;
+        padding-top: 2rem;
+    }
+
+    .second_Contr {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-auto-rows: minmax(200px, auto);
+        grid-column-gap: 30px;
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    .txt_Cnt {
+        margin: 1rem 1.5rem;
+    }
+
+    .second_Contr_parts {
+        /* min-height: 15rem; */
+        flex-wrap: wrap;
+        margin: 15px auto;
+    }
+
+    .txt_Cnt {
+        padding: 2.2rem 1.5rem;
+    }
+
+    .txt_Cnt .txt_Cnt_head .txt_Cnt_h {
+        font-size: 3rem;
+        line-height: 70px;
+    }
+
+    .txt_Cnt .txt_Cnt_sub {
+        padding-top: 15px;
+    }
+
+    .txt_Cnt .txt_Cnt_sub .txt_Cnt_s {
+        font-size: 1.5rem;
+        line-height: 35px;
+    }
+
+    .second_Contr .second_Contr_part2 .box_Cnt {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+
+    .txt_Cnt .txt_Cnt1_line1, .txt_Cnt .txt_Cnt1_line3 {
+        font-size: 2rem;
+        text-align: center;
+    }
+    
+    .txt_Cnt .txt_Cnt1_line3 {
+        line-height: 30px;
+    }
+    
+    .txt_Cnt .txt_Cnt1_line2 {
+        font-size: 6rem;
+        line-height: 100px;
+        text-align: center;
+    }
+
+    .box_Cnt .txt_Cnt2 {
+        display: none;
+    }
+
+    .earth-vec-img {
+        display: none;
+    }
+
+    .earth-vec-img-forMob {
+        display: block;
+        margin-top: 40px; 
+    }
+
+
+    .para-btn1 {
+        display: none;
+    }
+
+    .para-btn1-foriPAD {
+        display: inline-block;
+        font-size: 1.5rem;
+        margin-top: 30px;
+        padding: 10px 40px;
+        background-color: transparent;
+        border: 2px solid rgba(114, 191, 68, 1);
     }
 }
